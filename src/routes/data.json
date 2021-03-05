@@ -1,0 +1,10 @@
+[
+    {
+        "GameID":"ID",
+        "Name":"Name",
+        "Language":"Language",
+        "Scores":"Scores",
+        "Players":"Players",
+        "Ranking":"Ranking"
+    }
+]
