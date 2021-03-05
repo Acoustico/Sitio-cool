@@ -1,8 +1,16 @@
 [
     {
-        "GameID":"ID",
-        "Name":"Name",
-        "Language":"Language",
+        "GameID":"1",
+        "Name":"juego1",
+        "Language":"Esp",
+        "Scores":"Scores",
+        "Players":"Players",
+        "Ranking":"Ranking"
+    },
+    {
+        "GameID":"2",
+        "Name":"juego2",
+        "Language":"Esp",
         "Scores":"Scores",
         "Players":"Players",
         "Ranking":"Ranking"
