@@ -1,11 +1,18 @@
 [
     {
-        "Name":"Name",
+        "Name":"Pujol",
         "Score":"Score",
         "Total":"Total"
     },
     {
-
+        "Name":"Aaron",
+        "Score":"Score",
+        "Total":"Total"
+    },
+    {
+        "Name":"yo",
+        "Score":"Score",
+        "Total":"Total"
     }
 
 ]

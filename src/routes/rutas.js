@@ -7,19 +7,22 @@ const pdata=require('./playerdata.json');
 router.get('/', (req,res) =>{
     res.json({"Damn":"Daniel"});
 })
+
 router.get('/Game', (req,res) =>{
     res.json(juegos);
 })
-router.get('/:ID',(req,res)=>{
-    const {ID}=req.params;
-    juegos.forEach(juego=>{
-        if(juego.ID==ID){
-            req.json(juego);
-        }
-    })
-})
+
 router.get('/player',(req,res)=>{
     res.json(pdata);
+})
+
+router.get('/id',(req,res)=>{
+    const {id}=req.params;
+    juegos.forEach(juego=>{
+        if(juego.ID==id){
+            res.json(juego);
+        }
+    })
 })
 
 router.post('/', (req,res)=>{
