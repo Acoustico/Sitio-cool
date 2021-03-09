@@ -2,6 +2,7 @@ const {Router}=require('express');
 const router=Router();
 
 const juegos=require('./data.json');
+const pdata=require('./playerdata.json');
 
 router.get('/', (req,res) =>{
     res.json({"Damn":"Daniel"});
@@ -17,9 +18,8 @@ router.get('/:ID',(req,res)=>{
         }
     })
 })
-router.get('/Player',(req,res)=>{
-    res.json({"Score":"Score",
-            "Total":"Total"});
+router.get('/player',(req,res)=>{
+    res.json(pdata);
 })
 
 router.post('/', (req,res)=>{
