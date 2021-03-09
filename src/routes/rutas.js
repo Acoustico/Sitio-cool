@@ -9,7 +9,7 @@ router.get('/', (req,res) =>{
 })
 
 router.get('/Game', (req,res) =>{
-    res.json(juegos);
+    res.json(juegos); //en las secciones de scores y players tenemos que llamar todas las instancias
 })
 
 router.get('/player',(req,res)=>{
