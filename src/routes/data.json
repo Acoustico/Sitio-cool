@@ -1,18 +1,26 @@
 [
     {
         "ID":"1",
-        "Name":"Fornti",
+        "Name":"Fornai",
         "Language":"Esp",
-        "Scores":"Scores", 
-        "Players":"Players", 
         "Ranking":"Ranking"
     },
     {
         "ID":"2",
-        "Name":"juego2",
-        "Language":"Esp",
-        "Scores":"Scores",
-        "Players":"Players",
+        "Name":"FNAF",
+        "Language":"Eng",
+        "Ranking":"Ranking"
+    },
+    {
+        "ID":"3",
+        "Name":"Left3Ded2",
+        "Language":"Eng",
+        "Ranking":"Ranking"
+    },
+    {
+        "ID":"4",
+        "Name":"Maincra",
+        "Language":"Eng",
         "Ranking":"Ranking"
     }
 ]
