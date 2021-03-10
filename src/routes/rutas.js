@@ -26,7 +26,8 @@ router.get('/player',(req,res)=>{
     })
 })*/
 
-router.get('/Game/Scores',(req,res)=>{
+router.get('/Game/id/Scores',(req,res)=>{
+    const {id}=req.params;
     res.json(scores);
 })//hay que ver si vamos a separar los scores de los playes
 
