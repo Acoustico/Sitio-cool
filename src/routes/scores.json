@@ -1,22 +1,23 @@
 [
     {
-        "Name":"Fornai",
-        "Scores":"Scores",
+        "id": "1",
+        "Game":"Fornai",
+        "Scores":"2000, 3000, 10000, 0",
         "Players":"yo, Aaron, Pujol, mi equipo"
     },
     {
         "Game":"FNAF",
-        "Scores":"Scores",
+        "Scores":"1000, 2000, 1",
         "Players":"yo, Aaron, Pujol"
     },
     {
         "Game":"Left3Ded2",
-        "Scores":"Scores",
+        "Scores":"5000, 3000",
         "Players":"mi equipo, yo"
     },
     {
         "Game":"Maincra",
-        "Scores":"Scores",
+        "Scores":"500, 1000, 2000",
         "Players":"yo, mi equipo, Aaron"
     }
 ]

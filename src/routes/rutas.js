@@ -3,17 +3,35 @@ const router=Router();
 
 const juegos=require('./data.json');
 const pdata=require('./pdata.json');
-const scores=require('./scores.json');//ver como vamos a clasificar los scores
+const scores=require('./scores.json');
 
 router.get('/', (req,res) =>{
     res.json({"Damn":"Daniel"});
 })
 
-router.get('/Game', (req,res) =>{
+router.get('/Games', (req,res) =>{
     res.json(juegos); 
 })
 
 router.get('/player',(req,res)=>{
+    res.json(pdata);
+})
+
+router.get('/Game/:id/Scores',(req,res)=>{
+    var id=req.params;
+    res.json(scores)
+})
+
+router.get('/Game/:id/Ranking',(req,res)=>{
+    var id=req.params;
+    res.json(scores);
+})
+
+router.get('/player/score', (req,res)=>{
+    res.json(pdata);
+})
+
+router.get('/player/score/total',(req,res)=>{
     res.json(pdata);
 })
 
@@ -24,24 +42,6 @@ router.get('/player',(req,res)=>{
             res.json(juego);
         }
     })
-})*/
-
-router.get('/Game/id/Scores',(req,res)=>{
-    const {id}=req.params;
-    res.json(scores);
-})//hay que ver si vamos a separar los scores de los playes
-
-
-/*router.post('/', (req,res)=>{
-    const {Name,Language,Scores,Players,Ranking}=req.body;
-    if(Name){
-        const id=juegos.lenght +1;
-        const newgame = {...req.body,id};
-        juegos.push(newgame);
-        res.status(200).json(juegos);
-    }else{
-        res.status(500).json({error:'no data'});
-    }
 })*/
 
 module.exports=router;
